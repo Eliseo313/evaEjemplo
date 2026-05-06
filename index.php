@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EVA - IA de Análisis de Negocios</title>
+    <meta name="description" content="EVA es una asistente inteligente que analiza tus tablas de base de datos y te ayuda con insights de negocio.">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<?php
+//phpinfo();
+?>
+
+    <div class="chat-container">
+        <div class="chat-header">
+            <h1>EVA</h1>
+            <p>Análisis inteligente de base de datos</p>
+        </div>
+
+        <div class="chat-box" id="chatBox">
+            <div class="message bot">
+                Hola, soy <strong>EVA</strong>. He analizado la estructura de tu base de datos y estoy lista para ayudarte.
+                <br><br>
+                Puedes preguntarme sobre las ventas o mencionar cualquier tabla de tu sistema para que la analice. 🚀
+            </div>
+        </div>
+
+        <div class="chat-input">
+            <input 
+                type="text" 
+                id="userInput" 
+                placeholder="Pregunta algo sobre tu negocio..."
+                autocomplete="off"
+            >
+            <button onclick="enviarMensaje()" aria-label="Enviar mensaje">
+                <svg viewBox="0 0 24 24">
+                    <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"></path>
+                </svg>
+            </button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
