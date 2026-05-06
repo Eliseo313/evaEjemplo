@@ -33,7 +33,7 @@ async function enviarMensaje() {
     const mensajeCargando = agregarMensaje("", "bot loading");
 
     try {
-        const response = await fetch("api.php", {
+        const response = await fetch("api/api.php", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({ mensaje: texto })
